@@ -17,7 +17,7 @@ with xlrd.open_workbook("./data/majors.xlsx", encoding_override="utf-8")as excel
         text = text+" "+clou
     print(text)
     # 图片遮罩层
-    mask_pic = numpy.array(Image.open("./data/china.png"))
+    mask_pic = numpy.array(Image.open("./data/pq.png"))
     # 将参数mask设值为：mask_pic 造型遮盖
     wordcloud = WordCloud(font_path="./data/simhei.ttf", mask=mask_pic).generate(text)
     image = wordcloud.to_image()
