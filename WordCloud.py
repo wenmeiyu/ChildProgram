@@ -22,3 +22,4 @@ with xlrd.open_workbook("./data/majors.xlsx", encoding_override="utf-8")as excel
     wordcloud = WordCloud(font_path="./data/simhei.ttf", mask=mask_pic).generate(text)
     image = wordcloud.to_image()
     image.show()
+
